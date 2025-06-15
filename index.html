@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dämonisch</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* CSS aqui (coloquei inline para facilitar upload) */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    color: #e60000;
+    font-family: 'UnifrakturCook', cursive, serif;
+    background-color: #0a0a0a;
+  }
+  body {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 8px #ff0000;
+    animation: fadeIn 3s ease forwards;
+  }
+  .symbols {
+    font-size: 2rem;
+    margin-top: 5px;
+    animation: glow 2.5s ease-in-out infinite alternate;
+  }
+  .intro p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 4s ease forwards;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    animation: fadeIn 5s ease forwards;
+  }
+  .gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ff0000;
+    filter: grayscale(40%) contrast(120%) brightness(80%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+  .gallery img:hover {
+    filter: grayscale(0%) contrast(130%) brightness(120%);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff0000;
+  }
+  .mantra blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    animation: fadeIn 6s ease forwards;
+    color: #cc0000;
+    text-shadow: 0 0 8px #8b0000;
+  }
+  footer {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #550000;
+    text-shadow: 0 0 6px #330000;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  @keyframes glow {
+    0% { text-shadow: 0 0 4px #ff0000; }
+    100% { text-shadow: 0 0 20px #ff3300; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dämonisch</h1>
+  <div class="symbols">666 &#x26E4; &#x2234;</div>
+</header>
+<section class="intro">
+  <p>Entre os véus do mundo visível, habita o caos. Nós somos Dämonisch.</p>
+</section>
+<section class="gallery">
+  <img src="https://i.imgur.com/hF2fJXL.jpg" alt="Crânio macabro" />
+  <img src="https://i.imgur.com/3FcL7dK.jpg" alt="Olho demoníaco" />
+  <img src="https://i.imgur.com/8L7xXAJ.jpg" alt="Pentagrama invertido" />
+</section>
+<section class="mantra">
+  <blockquote>“O fogo que arde sem se ver é o fogo da alma perdida.”</blockquote>
+</section>
+<footer>
+  <p>© Dämonisch • 666 &#x26E4; &#x2234;</p>
+</footer>
+</body>
+</html>
